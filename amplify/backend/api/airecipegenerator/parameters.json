@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "airecipegenerator",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authairecipegeneratore6000c32",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
